@@ -1,21 +1,21 @@
 <script lang="ts">
 // import TheWelcome from "../components/TheWelcome.vue";
-import { RouterLink } from "vue-router";
-import type { PropType } from "vue";
+import { RouterLink } from 'vue-router'
+import type { PropType } from 'vue'
 
 export interface BookObject {
-  _id: string;
-  title: string;
-  author: string;
-  publishedDate: string;
-  tags: string[];
-  initialQty: number;
-  qty: number;
-  publisher: string;
+  _id: string
+  title: string
+  author: string
+  publishedDate: string
+  tags: string[]
+  initialQty: number
+  qty: number
+  publisher: string
 }
 
 export default {
-  name: "BookCard",
+  name: 'BookCard',
   components: {
     RouterLink,
   },
@@ -27,10 +27,10 @@ export default {
   },
   methods: {
     getReadMoreLink(id: string) {
-      return `/detail/${id}`;
+      return `/detail/${id}`
     },
   },
-};
+}
 </script>
 
 <template>
@@ -40,16 +40,12 @@ export default {
       alt="Wajib Pake Typescript hehe"
       class="rounded-xl mb-4 w-full"
     />
-    <h3 class="text-xl font-bold text-left">
-      {{ book.title }} | {{ book.author }}
-    </h3>
+    <h3 class="text-xl font-bold text-left">{{ book.title }} | {{ book.author }}</h3>
     <hr class="my-2 border border-black" />
     <h5 class="text-md font-medium text-left">
       Published: {{ book.publishedDate }} by {{ book.publisher }}
     </h5>
-    <h5 class="text-md font-medium text-left">
-      Category: {{ book.tags.join(", ") }}
-    </h5>
+    <h5 class="text-md font-medium text-left">Category: {{ book.tags.join(', ') }}</h5>
     <h5 class="text-md font-medium text-left">
       Quantity: {{ book.qty }} of {{ book.initialQty }} books
     </h5>
