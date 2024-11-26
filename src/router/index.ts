@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import CreateView from '@/views/CreateView.vue'
+import DetailBookView from '@/views/DetailBookView.vue'
 import BookView from '@/views/BookView.vue'
 
 const router = createRouter({
@@ -14,6 +15,11 @@ const router = createRouter({
       path: '/create',
       name: 'create',
       component: CreateView,
+    },
+    {
+      path: '/detail/:id',
+      name: 'book detail',
+      component: DetailBookView,
     },
   ],
 })
