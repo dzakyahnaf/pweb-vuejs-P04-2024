@@ -44,7 +44,7 @@ export default defineComponent({
   },
   methods: {
     async deleteBook() {
-      const response = await fetch(`http://localhost:5000/book/${this.$route.params.id}`, {
+      const response = await fetch(`http://localhost:5000/books/${this.$route.params.id}`, {
         method: 'DELETE',
       })
       const data = await response.json()
