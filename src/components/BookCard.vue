@@ -34,7 +34,7 @@ export default {
 </script>
 
 <template>
-  <div class="border border-black rounded-xl px-6 pt-6 pb-8">
+  <div class="border rounded-xl px-6 pt-6 pb-8 bg-blue-300 shadow-lg">
     <img
       src="https://placehold.co/300x200"
       alt="Wajib Pake Typescript hehe"
@@ -55,4 +55,6 @@ export default {
       >Read More</RouterLink
     >
   </div>
+
+  <div></div>
 </template>
