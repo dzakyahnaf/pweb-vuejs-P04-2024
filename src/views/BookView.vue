@@ -10,6 +10,7 @@ interface BookObject {
   initialQty: number
   qty: number
   publisher: string
+  coverImage: string
 }
 
 export default {
