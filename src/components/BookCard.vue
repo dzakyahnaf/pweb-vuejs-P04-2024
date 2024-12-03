@@ -36,11 +36,7 @@ export default {
 
 <template>
   <div class="border rounded-xl px-6 pt-6 pb-8 bg-blue-300 shadow-lg">
-    <img
-      :src="book.coverImage"
-      alt="Cover Image"
-      class="rounded-xl mb-4 w-full max-w-sm mx-auto"
-    />
+    <img :src="book.coverImage" alt="Cover Image" class="rounded-xl mb-4 w-full max-w-sm mx-auto" />
     <h3 class="text-xl font-bold text-left">{{ book.title }} | {{ book.author }}</h3>
     <hr class="my-2 border border-black" />
     <h5 class="text-md font-medium text-left">
